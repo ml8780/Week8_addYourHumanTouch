@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Your Human Touch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inconsolata&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="topContainer">
+        <h1>Add Your Human Touch</h1>
+        <p id="instruction">
+            Instructions:
+            <br>
+            1. Use the 'Next' button to explore various AI-generated artworks.
+            <br>
+            2. Pick the one you'd like to add your human touch (draw).
+            <br>
+            3. Press 'e' to start.
+            <br>
+            4. Click and drag your mouse on top of the image to draw.
+            <br>
+            5. Press 'e' to reset.
+        </p>
+        <button id="nextB">
+            <img src="https://images.squarespace-cdn.com/content/v1/5f39fc9081c3fe6a3e7b7322/1604974229695-E6PSMB8KFSS4WEOABI4E/Emoji.png"
+                alt="curious emoji" width="50" height="50">Next</button>
+    </div>
+
+    <div class="container">
+        <div id="canvasForHTML"></div>
+        <img id="img" class="imageData" alt="ai generated art" />
+        <div class="artworkInfo">
+            <h3> Title : <span id="title"> </span></h3>
+            <h3> This artwork was created by : <span id="name"></span></h3>
+            <a id="link"> click to view the post </a>
+        </div>
+
+
+
+
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>

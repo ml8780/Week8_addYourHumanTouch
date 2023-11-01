@@ -1,0 +1,153 @@
+body {
+    background-position-y: 600px;
+    background-image: url(https://www.tokyoartsandspace.jp/static/program/4996/1_209_kan.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: chartreuse;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    height: 1500px;
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 80px;
+}
+
+#canvasForHTML {
+    display: block;
+}
+
+.topContainer{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 150px auto;
+}
+
+canvas{
+    size: 100%;
+    position:absolute;
+}
+
+p{
+    margin: 50px auto;
+    font-family: 'Inconsolata', monospace;
+}
+
+/* .container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content:center;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    z-index: -1;
+} */
+
+.artworkInfo{
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    margin: 25px auto;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30vw;
+}
+
+#img {
+    z-index: -1;
+    height: 400px;
+    align-items: center;
+    /* width: 30vw; */
+}
+
+/* 
+canvas{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: -1;
+} */
+
+
+#nextB{
+    width: 70px;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+#nextB:hover {
+    transform: scale(1.2);
+    color: chartreuse;
+    background-color: rgb(142, 142, 142);
+    background-image: url(https://npr.brightspotcdn.com/dims4/default/bb65432/2147483647/strip/true/crop/640x640+0+0/resize/880x880!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fwamc%2Ffiles%2F201907%2FThinking_Face_Emoji.png);
+}
+
+
+@media(max-width: 1000px){
+    #img {
+        align-items: center;
+        z-index: -1;
+        height: 300px;
+    }
+
+    .artworkInfo{
+        text-align: right;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 10px;
+        margin: 25px auto;
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        width: 30vw;
+    }
+
+    h1{
+        margin: 10px auto;
+        text-align: center;
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 60px;
+    }
+/* 
+    .container{
+        display: flex;
+        flex-direction: column;
+    }  */
+
+}
+
+
+@media(max-width: 750px){
+    #img {
+        align-items: center;
+        z-index: -1;
+        height: 150px;
+        /* width: 30vw; */
+    }
+
+    .artworkInfo{
+        text-align: right;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 8px;
+        /* margin: 25px auto; */
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        width: 20vw;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+}
